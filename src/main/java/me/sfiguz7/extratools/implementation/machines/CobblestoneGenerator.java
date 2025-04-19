@@ -40,12 +40,12 @@ public class CobblestoneGenerator extends SimpleSlimefunItem<BlockTicker> implem
 
     public CobblestoneGenerator() {
         super(ETItems.extra_tools, ETItems.COBBLESTONE_GENERATOR, RecipeType.ENHANCED_CRAFTING_TABLE,
-            new ItemStack[] {SlimefunItems.PROGRAMMABLE_ANDROID_MINER, SlimefunItems.MAGNESIUM_INGOT,
-                SlimefunItems.PROGRAMMABLE_ANDROID_MINER,
-                new ItemStack(Material.WATER_BUCKET), SlimefunItems.BLISTERING_INGOT_3,
+            new ItemStack[] {SlimefunItems.PROGRAMMABLE_ANDROID_MINER.item(), SlimefunItems.MAGNESIUM_INGOT.item(),
+                SlimefunItems.PROGRAMMABLE_ANDROID_MINER.item(),
+                new ItemStack(Material.WATER_BUCKET), SlimefunItems.BLISTERING_INGOT_3.item(),
                 new ItemStack(Material.LAVA_BUCKET),
-                SlimefunItems.PROGRAMMABLE_ANDROID_MINER, SlimefunItems.BIG_CAPACITOR,
-                SlimefunItems.PROGRAMMABLE_ANDROID_MINER});
+                SlimefunItems.PROGRAMMABLE_ANDROID_MINER.item(), SlimefunItems.BIG_CAPACITOR.item(),
+                SlimefunItems.PROGRAMMABLE_ANDROID_MINER.item()});
 
         createPreset(this, this::constructMenu);
 
@@ -54,15 +54,15 @@ public class CobblestoneGenerator extends SimpleSlimefunItem<BlockTicker> implem
 
     private void constructMenu(BlockMenuPreset preset) {
         for (int i : border) {
-            preset.addItem(i, new CustomItemStack(new ItemStack(Material.GRAY_STAINED_GLASS_PANE), " "),
+            preset.addItem(i, CustomItemStack.create(new ItemStack(Material.GRAY_STAINED_GLASS_PANE), " "),
                 ChestMenuUtils.getEmptyClickHandler());
         }
         for (int i : inputBorder) {
-            preset.addItem(i, new CustomItemStack(new ItemStack(Material.CYAN_STAINED_GLASS_PANE), " "),
+            preset.addItem(i, CustomItemStack.create(new ItemStack(Material.CYAN_STAINED_GLASS_PANE), " "),
                 ChestMenuUtils.getEmptyClickHandler());
         }
         for (int i : outputBorder) {
-            preset.addItem(i, new CustomItemStack(new ItemStack(Material.ORANGE_STAINED_GLASS_PANE), " "),
+            preset.addItem(i, CustomItemStack.create(new ItemStack(Material.ORANGE_STAINED_GLASS_PANE), " "),
                 ChestMenuUtils.getEmptyClickHandler());
         }
 

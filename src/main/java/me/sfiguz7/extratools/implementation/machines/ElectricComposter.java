@@ -101,14 +101,14 @@ public abstract class ElectricComposter extends AContainer implements RecipeDisp
 
     public enum Tier {
         ONE(new ItemStack[] {
-            SlimefunItems.GILDED_IRON, SlimefunItems.MAGNESIUM_INGOT, SlimefunItems.GILDED_IRON,
-            SlimefunItems.ELECTRIC_MOTOR, SlimefunItems.COMPOSTER, SlimefunItems.ELECTRIC_MOTOR,
-            new ItemStack(Material.IRON_HOE), SlimefunItems.MEDIUM_CAPACITOR, new ItemStack(Material.IRON_HOE) }
+            SlimefunItems.GILDED_IRON.item(), SlimefunItems.MAGNESIUM_INGOT.item(), SlimefunItems.GILDED_IRON.item(),
+            SlimefunItems.ELECTRIC_MOTOR.item(), SlimefunItems.COMPOSTER.item(), SlimefunItems.ELECTRIC_MOTOR.item(),
+            new ItemStack(Material.IRON_HOE), SlimefunItems.MEDIUM_CAPACITOR.item(), new ItemStack(Material.IRON_HOE) }
         ),
-        TWO(new ItemStack[] { SlimefunItems.HARDENED_METAL_INGOT, SlimefunItems.BLISTERING_INGOT_3,
-            SlimefunItems.HARDENED_METAL_INGOT,
-            SlimefunItems.ELECTRIC_MOTOR, ETItems.ELECTRIC_COMPOSTER, SlimefunItems.ELECTRIC_MOTOR,
-            new ItemStack(Material.DIAMOND_HOE), SlimefunItems.LARGE_CAPACITOR, new ItemStack(Material.DIAMOND_HOE) }
+        TWO(new ItemStack[] { SlimefunItems.HARDENED_METAL_INGOT.item(), SlimefunItems.BLISTERING_INGOT_3.item(),
+            SlimefunItems.HARDENED_METAL_INGOT.item(),
+            SlimefunItems.ELECTRIC_MOTOR.item(), ETItems.ELECTRIC_COMPOSTER.item(), SlimefunItems.ELECTRIC_MOTOR.item(),
+            new ItemStack(Material.DIAMOND_HOE), SlimefunItems.LARGE_CAPACITOR.item(), new ItemStack(Material.DIAMOND_HOE) }
         );
 
         private final ItemStack[] recipe;

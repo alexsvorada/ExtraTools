@@ -42,12 +42,12 @@ public class ExtraTools extends JavaPlugin implements SlimefunAddon {
         new Hammer().register(this);
         new Research(new NamespacedKey(this, "HAMMER"),
             ++researchId, "Hammer", 3)
-            .addItems(ETItems.HAMMER).register();
+            .addItems(ETItems.HAMMER.item()).register();
 
         new GoldTransmuter().register(this);
         new Research(new NamespacedKey(this, "GOLD_TRANSMUTER"),
             ++researchId, "Gold Transmuter", 12)
-            .addItems(ETItems.GOLD_TRANSMUTER).register();
+            .addItems(ETItems.GOLD_TRANSMUTER.item()).register();
 
         new ElectricComposter(ElectricComposter.Tier.ONE) {
 
@@ -64,7 +64,7 @@ public class ExtraTools extends JavaPlugin implements SlimefunAddon {
         }.register(this);
         new Research(new NamespacedKey(this, "ELECTRIC_COMPOSTER"),
             ++researchId, "Electric Composter", 18)
-            .addItems(ETItems.ELECTRIC_COMPOSTER).register();
+            .addItems(ETItems.ELECTRIC_COMPOSTER.item()).register();
 
         new ElectricComposter(ElectricComposter.Tier.TWO) {
 
@@ -81,27 +81,27 @@ public class ExtraTools extends JavaPlugin implements SlimefunAddon {
         }.register(this);
         new Research(new NamespacedKey(this, "ELECTRIC_COMPOSTER_2"),
             ++researchId, "Electric Composter II", 18)
-            .addItems(ETItems.ELECTRIC_COMPOSTER_2).register();
+            .addItems(ETItems.ELECTRIC_COMPOSTER_2.item()).register();
 
         new CobblestoneGenerator().register(this);
         new Research(new NamespacedKey(this, "COBBLESTONE_GENERATOR"),
             ++researchId, "Cobblestone Generator", 40)
-            .addItems(ETItems.COBBLESTONE_GENERATOR).register();
+            .addItems(ETItems.COBBLESTONE_GENERATOR.item()).register();
 
         new Vaporizer().register(this);
         new Research(new NamespacedKey(this, "VAPORIZER"),
             ++researchId, "Vaporizer", 18)
-            .addItems(ETItems.VAPORIZER).register();
+            .addItems(ETItems.VAPORIZER.item()).register();
 
         new ConcreteFactory().register(this);
         new Research(new NamespacedKey(this, "CONCRETE_FACTORY"),
             ++researchId, "Concrete Factory", 12)
-            .addItems(ETItems.CONCRETE_FACTORY).register();
+            .addItems(ETItems.CONCRETE_FACTORY.item()).register();
 
         new Pulverizer().register(this);
         new Research(new NamespacedKey(this, "PULVERIZER"),
             ++researchId, "Pulverizer", 18)
-            .addItems(ETItems.PULVERIZER).register();
+            .addItems(ETItems.PULVERIZER.item()).register();
 
     }
 

@@ -21,9 +21,9 @@ public class Pulverizer extends AContainer implements RecipeDisplayItem {
 
     public Pulverizer() {
         super(ETItems.extra_tools, ETItems.PULVERIZER, RecipeType.ENHANCED_CRAFTING_TABLE,
-            new ItemStack[] {SlimefunItems.SILICON, SlimefunItems.HARDENED_METAL_INGOT, SlimefunItems.SILICON,
-                SlimefunItems.ELECTRIC_MOTOR, SlimefunItems.STEEL_PLATE, SlimefunItems.ELECTRIC_MOTOR,
-                new ItemStack(Material.IRON_PICKAXE), SlimefunItems.MEDIUM_CAPACITOR,
+            new ItemStack[] {SlimefunItems.SILICON.item(), SlimefunItems.HARDENED_METAL_INGOT.item(), SlimefunItems.SILICON.item(),
+                SlimefunItems.ELECTRIC_MOTOR.item(), SlimefunItems.STEEL_PLATE.item(), SlimefunItems.ELECTRIC_MOTOR.item(),
+                new ItemStack(Material.IRON_PICKAXE), SlimefunItems.MEDIUM_CAPACITOR.item(),
                 new ItemStack(Material.IRON_PICKAXE)});
 
         addItemHandler(onBreak());

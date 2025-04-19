@@ -15,7 +15,7 @@ public final class ETItems {
     /* Category */
     public static final ItemGroup extra_tools = new ItemGroup(new NamespacedKey(ExtraTools.getInstance(),
         "extra_tools"),
-        new CustomItemStack(Material.DIAMOND_AXE, "&4Extra Tools")
+        CustomItemStack.create(Material.DIAMOND_AXE, "&4Extra Tools")
     );
     /* Items */
     public static final SlimefunItemStack HAMMER = new SlimefunItemStack("HAMMER",
